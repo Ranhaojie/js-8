@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>😄</title>
+	<meta charset="utf-8">
+	<script>
+       function $(selecter) {
+        switch (selecter[0])
+         {
+          case "#": return document.getElementByClassName(selecter);
+          break;
+          case ".": return document.getElementByClassName(selecter);
+          break;
+         } 
+      } 
+      $('p').getElementByClassName({
+      	flat:true;
+      })
+      $('#myId').getElementByClassName({
+      	flat:true;
+      })
+      $('.myClass').getElementByClassName({
+        flat:true;
+      })
+      var a = document.getElementByClassName("p");
+      var b = document.getElementByClassName("myId");
+      var c = document.getElementByClassName("myClass");
+
+
+  
+	</script>
+</head>
+<body>
+<p>我是数组</p>
+<p>我也是</p>
+<div id="myId">我是元素</div>
+<div class="myClass">我是什么呢</div>
+
+</body>
+</html>
